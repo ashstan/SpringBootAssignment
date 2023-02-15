@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<body>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#locales").change(function () {
+                var selectedOption = $('#locales').val();
+                if (selectedOption != ''){
+                    window.location.replace('/?lang=' + selectedOption);
+                }
+            });
+        });
+    </script>
+
+    <title>How to Quit Your Job: 3 Easy Steps</title>
+</head>
+
+<header th:fragment="header">
+    <nav>
+        <div>
+        <ul>
+            <li><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/step1}">Step 1</a></li>
+            <li><a th:href="@{/step2}">Step 2</a></li>
+            <li><a th:href="@{/step3}">Step 3</a></li>
+        </ul>
+        </div>
+    </nav>
+</header>
+
+</body>
+</html>

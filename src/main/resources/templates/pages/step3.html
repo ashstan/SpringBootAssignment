@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="fragments/_header :: head(pageTitle='Quit Your Job: Step 3')">
+</head>
+<body>
+
+<div th:insert="fragments/_header :: header"></div>
+
+<h2>Step 3 (Optional)</h2>
+
+<p>
+    Maybe let someone know you quit. Maybe not... they'll figure it out eventually. You could always leave a note.
+</p>
+
+<div class="center">
+    <a th:href="@{/}"><img th:src="@{/img/Quit.png}" width="300" height="300"/></a>
+</div>
+
+<div class="center">
+<a th:href="@{/}"><button>Home</button></a>
+</div>
+
+<div th:insert="fragments/_footer :: footer"></div>
+
+</body>
+</html>

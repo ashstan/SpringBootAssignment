@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="fragments/_header :: head(pageTitle='How to Quit Your Job: 3 Easy Steps')">
+</head>
+
+<body>
+<div th:insert="fragments/_header :: header"></div>
+<h1>
+    How to Quit Your Job in 3 Easy Steps
+</h1>
+<p>
+    We all hate working. Why don't you just quit?
+</p>
+
+<div class="center">
+<a th:href="@{/}"><img th:src="@{/img/work-sucks-i2384.jpg}"/></a>
+</div>
+
+<div class="center">
+<a th:href="@{/step1}"><button>Step 1</button></a>
+</div>
+
+<div th:replace="fragments/_footer :: footer"></div>
+</body>
+</html>

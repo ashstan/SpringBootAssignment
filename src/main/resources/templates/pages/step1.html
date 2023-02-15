@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="fragments/_header :: head(pageTitle='Quit Your Job: Step 1')">
+</head>
+<body>
+
+<div th:insert="fragments/_header :: header"></div>
+
+<h2>Step 1</h2>
+
+<p>
+    Take advantage of everything you can. Milk the clock. Take a nap. Flirt with your coworkers. Eat your bosses lunch out of the fridge. Order food on the company credit card. Use and abuse whatever you have access to.
+</p>
+
+<div class="center">
+    <a th:href="@{/}"><img th:src="@{/img/MAC18_WORK_CAROUSEL.jpg}" width="300" height="200"/></a>
+</div>
+
+<div class="center">
+<a th:href="@{/step2}"><button>Step 2</button></a>
+</div>
+
+<div th:insert="fragments/_footer :: footer"></div>
+
+</body>
+</html>

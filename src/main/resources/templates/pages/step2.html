@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="fragments/_header :: head(pageTitle='Quit Your Job: Step 2')">
+</head>
+<body>
+
+<div th:insert="fragments/_header :: header"></div>
+
+<h2>Step 2</h2>
+
+<p>
+    Pack up your stuff. Also pack up your company's stuff. You've been working for them long enough, isn't that the least they can give you?
+</p>
+
+<div class="center">
+    <a th:href="@{/}"><img th:src="@{/img/fired-male-employee-packing-box-belongings-office-104865517.jpg}" width="300" height="200"/></a>
+</div>
+
+<div class="center">
+<a th:href="@{/step3}"><button>Step 3</button></a>
+</div>
+
+<div th:insert="fragments/_footer :: footer"></div>
+
+</body>
+</html>

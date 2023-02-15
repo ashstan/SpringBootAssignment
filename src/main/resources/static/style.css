@@ -1,0 +1,79 @@
+body {
+    font-family: "Arial Black";
+    padding: 25px;
+    width: 80%;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+button {
+    background-color: #b5332a;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #85302a;
+}
+.center {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+img {
+    padding: 10px;
+    text-align: center;
+    background-size: contain;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ab3430;
+}
+
+li {
+    float: left;
+}
+
+li a, li span {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #8c0f0b;
+}
+
+.active {
+    background-color: #c2241f;
+}
+
+.left {
+    float: left;
+}
+
+footer {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: small;
+    /*padding: 14px 16px;*/
+    background-color: #ab3430;
+}
